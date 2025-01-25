@@ -1,16 +1,47 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An accessible portfolio designed with ARIA roles for enhanced usability.">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <!-- Navigation bar with ARIA role -->
+    <nav role="navigation" aria-label="Main Navigation">
+        <ul role="list">
+            <li role="listitem"><a href="#about">About</a></li>
+            <li role="listitem"><a href="#projects">Projects</a></li>
+            <li role="listitem"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
+    <!-- Heading with ARIA role -->
+    <h1 role="heading" aria-level="1">Welcome to My Portfolio</h1>
+
+    <!-- Image with ARIA role -->
+    <img role="img" src="profile.jpg" alt="Profile picture of the portfolio owner" />
+
+    <!-- Brief description -->
+    <section id="about">
+        <p>Hello! I’m a web developer passionate about creating accessible and user-friendly websites.</p>
+    </section>
+
+    <!-- List of projects with ARIA roles -->
+    <section id="projects">
+        <h2 role="heading" aria-level="2">My Projects</h2>
+        <ul role="list">
+            <li role="listitem">Portfolio Website</li>
+            <li role="listitem">E-commerce Application</li>
+            <li role="listitem">Blog Platform</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 role="heading" aria-level="2">Contact Me</h2>
+        <p>Feel free to reach out at <a href="mailto:example@example.com">example@example.com</a>.</p>
+    </section>
 </body>
-
 </html>
